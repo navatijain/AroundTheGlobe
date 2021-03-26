@@ -1,0 +1,6 @@
+query AllCountries {
+    countries {
+        name
+        code
+    }
+}
