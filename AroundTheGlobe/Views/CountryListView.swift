@@ -33,8 +33,15 @@ struct CountryListView: View {
                         .padding(.top, 30)
                     List(
                         countries.filter{ searchText.isEmpty ? true : $0.name.contains(searchText) },
-                        id: \.self) { country in
-                        Text(country.name)
+                        id: \.self
+                    ) { country in
+                        NavigationLink(
+                            destination: CountryDetailView(
+                                viewModel: CountryDetailViewModel(code: country.code)
+                            )
+                        ) {
+                            CountryCell(countryModel: country)
+                        }
                     }
                     .listRowBackground(Color.red)
                     .navigationBarTitle(Constants.title, displayMode: .inline)
