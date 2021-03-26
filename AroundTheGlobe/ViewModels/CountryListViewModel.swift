@@ -11,7 +11,7 @@ class CountryListViewModel: Loadable {
     
     // MARK: - Properties
     
-    private var service: CountryService
+    private let service: CountryService
     @Published private(set) var state = LoadingState<[Country]>.notLoaded
     
     // MARK: - Init
@@ -28,7 +28,11 @@ class CountryListViewModel: Loadable {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let countries):
-                    self?.state = .loaded(countries)
+                    if let countries = countries, countries.isEmpty == false {
+                        self?.state = .loaded(countries)
+                    } else {
+                        self?.state = .error(.noData)
+                    }
                 case .failure(let error):
                     self?.state = .error(error)
                 }

@@ -11,7 +11,7 @@ class CountryDetailViewModel: Loadable {
     
     // MARK: - Properties
     
-    private var service: CountryService
+    private let service: CountryService
     @Published private(set) var state = LoadingState<CountryDetail>.notLoaded
     private let code: String
     
@@ -30,7 +30,11 @@ class CountryDetailViewModel: Loadable {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let detail):
-                    self?.state = .loaded(detail)
+                    if let detail = detail {
+                        self?.state = .loaded(detail)
+                    } else {
+                        self?.state = .error(.noData)
+                    }
                 case .failure(let error):
                     self?.state = .error(error)
                 }

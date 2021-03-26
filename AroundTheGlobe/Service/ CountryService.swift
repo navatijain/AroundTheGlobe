@@ -14,6 +14,7 @@ typealias CountryDetail = CountryDetailQuery.Data.Country
 enum CustomError: Error {
     case invalidResponse
     case server
+    case noData
     
     var message: String {
         switch self {
@@ -22,6 +23,9 @@ enum CustomError: Error {
             
         case .server:
             return "Error fetching response from Server!"
+            
+        case .noData:
+            return "Sorry no data available to load!"
 
         default:
             return "Something went wrong!"
@@ -31,20 +35,16 @@ enum CustomError: Error {
 
 class CountryService {
     
-    typealias CountryListHandler = (Result<[Country], CustomError>) -> ()
-    typealias DetailsHandler = (Result<CountryDetail, CustomError>) -> ()
+    typealias CountryListHandler = (Result<[Country]?, CustomError>) -> ()
+    typealias DetailsHandler = (Result<CountryDetail?, CustomError>) -> ()
     
     func getCountries(handler: @escaping CountryListHandler) {
         let query = AllCountriesQuery()
-        Apollo.shared.client.fetch(query: query) { result in
+        Apollo.shared.client.fetch(query: query, cachePolicy: .fetchIgnoringCacheCompletely) { result in
             switch result {
             case .success(let graphQLResult):
-                if let countries = graphQLResult.data?.countries {
-                    handler(.success(countries))
-                } else {
-                    handler(.failure(.invalidResponse))
-                }
-            case .failure(let error):
+                handler(.success(graphQLResult.data?.countries))
+            case .failure:
                 handler(.failure(.server))
             }
         }
@@ -58,12 +58,8 @@ class CountryService {
         Apollo.shared.client.fetch(query: query, cachePolicy: .fetchIgnoringCacheCompletely) { result in
             switch result {
             case .success(let graphQLResult):
-                if let country = graphQLResult.data?.country {
-                    handler(.success(country))
-                } else {
-                    handler(.failure(.invalidResponse))
-                }
-            case .failure(let error):
+                handler(.success(graphQLResult.data?.country))
+            case .failure:
                 handler(.failure(.server))
             }
         }

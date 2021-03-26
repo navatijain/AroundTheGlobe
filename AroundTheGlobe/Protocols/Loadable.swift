@@ -15,7 +15,7 @@ enum LoadingState<Value> {
 }
 
 protocol Loadable: ObservableObject {
-    associatedtype Data
-    var state: LoadingState<Data> { get}
+    associatedtype DataSource
+    var state: LoadingState<DataSource> { get}
     func load()
 }
