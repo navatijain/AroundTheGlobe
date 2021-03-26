@@ -8,25 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		93F5EF01260DA3E500E82E11 /* AroundTheGlobeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF00260DA3E500E82E11 /* AroundTheGlobeApp.swift */; };
-		93F5EF03260DA3E500E82E11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF02260DA3E500E82E11 /* ContentView.swift */; };
+		93F5EF03260DA3E500E82E11 /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF02260DA3E500E82E11 /* CountryListView.swift */; };
 		93F5EF05260DA3E600E82E11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F5EF04260DA3E600E82E11 /* Assets.xcassets */; };
 		93F5EF08260DA3E600E82E11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F5EF07260DA3E600E82E11 /* Preview Assets.xcassets */; };
 		93F5EF15260DA4DF00E82E11 /* Country.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF14260DA4DF00E82E11 /* Country.graphql */; };
 		93F5EF1B260DA58D00E82E11 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 93F5EF1A260DA58D00E82E11 /* schema.json */; };
 		93F5EF20260DA62A00E82E11 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF1F260DA62A00E82E11 /* API.swift */; };
+		93F5EF2A260DA91600E82E11 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF29260DA91600E82E11 /* CountryListViewModel.swift */; };
+		93F5EF2E260DA94900E82E11 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF2D260DA94900E82E11 /* Loadable.swift */; };
+		93F5EF33260DA97300E82E11 /*  CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF32260DA97300E82E11 /*  CountryService.swift */; };
+		93F5EF39260DAAA100E82E11 /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF38260DAAA100E82E11 /* ApolloClient.swift */; };
 		B41D7450450CC6486702439A /* libPods-AroundTheGlobe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CDDE3028D640EC3F2C9062 /* libPods-AroundTheGlobe.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93F5EEFD260DA3E500E82E11 /* AroundTheGlobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundTheGlobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F5EF00260DA3E500E82E11 /* AroundTheGlobeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundTheGlobeApp.swift; sourceTree = "<group>"; };
-		93F5EF02260DA3E500E82E11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		93F5EF02260DA3E500E82E11 /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
 		93F5EF04260DA3E600E82E11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93F5EF07260DA3E600E82E11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93F5EF09260DA3E600E82E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93F5EF14260DA4DF00E82E11 /* Country.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Country.graphql; sourceTree = "<group>"; };
 		93F5EF1A260DA58D00E82E11 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = AroundTheGlobe/schema.json; sourceTree = SOURCE_ROOT; };
 		93F5EF1F260DA62A00E82E11 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = AroundTheGlobe/API.swift; sourceTree = SOURCE_ROOT; };
+		93F5EF29260DA91600E82E11 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		93F5EF2D260DA94900E82E11 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		93F5EF32260DA97300E82E11 /*  CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " CountryService.swift"; sourceTree = "<group>"; };
+		93F5EF38260DAAA100E82E11 /* ApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClient.swift; sourceTree = "<group>"; };
 		C1B576E6E86C9B199A281BED /* Pods-AroundTheGlobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundTheGlobe.release.xcconfig"; path = "Target Support Files/Pods-AroundTheGlobe/Pods-AroundTheGlobe.release.xcconfig"; sourceTree = "<group>"; };
 		D8809EC00E8BD7EA9BD0840F /* Pods-AroundTheGlobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundTheGlobe.debug.xcconfig"; path = "Target Support Files/Pods-AroundTheGlobe/Pods-AroundTheGlobe.debug.xcconfig"; sourceTree = "<group>"; };
 		F3CDDE3028D640EC3F2C9062 /* libPods-AroundTheGlobe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AroundTheGlobe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,9 +73,12 @@
 		93F5EEFF260DA3E500E82E11 /* AroundTheGlobe */ = {
 			isa = PBXGroup;
 			children = (
+				93F5EF2C260DA92C00E82E11 /* Protocols */,
+				93F5EF27260DA87300E82E11 /* Views */,
+				93F5EF26260DA86C00E82E11 /* ViewModels */,
+				93F5EF25260DA85E00E82E11 /* Service */,
 				93F5EF13260DA4A600E82E11 /* GraphQL */,
 				93F5EF00260DA3E500E82E11 /* AroundTheGlobeApp.swift */,
-				93F5EF02260DA3E500E82E11 /* ContentView.swift */,
 				93F5EF04260DA3E600E82E11 /* Assets.xcassets */,
 				93F5EF09260DA3E600E82E11 /* Info.plist */,
 				93F5EF06260DA3E600E82E11 /* Preview Content */,
@@ -89,8 +100,41 @@
 				93F5EF1F260DA62A00E82E11 /* API.swift */,
 				93F5EF1A260DA58D00E82E11 /* schema.json */,
 				93F5EF14260DA4DF00E82E11 /* Country.graphql */,
+				93F5EF38260DAAA100E82E11 /* ApolloClient.swift */,
 			);
 			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		93F5EF25260DA85E00E82E11 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				93F5EF32260DA97300E82E11 /*  CountryService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		93F5EF26260DA86C00E82E11 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				93F5EF29260DA91600E82E11 /* CountryListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		93F5EF27260DA87300E82E11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93F5EF02260DA3E500E82E11 /* CountryListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93F5EF2C260DA92C00E82E11 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				93F5EF2D260DA94900E82E11 /* Loadable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		A4518C7C2A8B760B415C8489 /* Pods */ = {
@@ -225,10 +269,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F5EF03260DA3E500E82E11 /* ContentView.swift in Sources */,
+				93F5EF03260DA3E500E82E11 /* CountryListView.swift in Sources */,
 				93F5EF01260DA3E500E82E11 /* AroundTheGlobeApp.swift in Sources */,
 				93F5EF20260DA62A00E82E11 /* API.swift in Sources */,
+				93F5EF39260DAAA100E82E11 /* ApolloClient.swift in Sources */,
+				93F5EF33260DA97300E82E11 /*  CountryService.swift in Sources */,
+				93F5EF2A260DA91600E82E11 /* CountryListViewModel.swift in Sources */,
 				93F5EF15260DA4DF00E82E11 /* Country.graphql in Sources */,
+				93F5EF2E260DA94900E82E11 /* Loadable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

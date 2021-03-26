@@ -11,7 +11,7 @@ import SwiftUI
 struct AroundTheGlobeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CountryListView(viewModel: CountryListViewModel())
         }
     }
 }
