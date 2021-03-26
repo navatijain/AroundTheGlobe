@@ -1,4 +1,4 @@
-module Apollo {
+framework module Apollo {
   umbrella header "Apollo-umbrella.h"
 
   export *

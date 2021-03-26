@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "30EE3CABB612307A688C40B61BFA74CC"
-               BuildableName = "libApollo.a"
+               BuildableName = "Apollo.framework"
                BlueprintName = "Apollo"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

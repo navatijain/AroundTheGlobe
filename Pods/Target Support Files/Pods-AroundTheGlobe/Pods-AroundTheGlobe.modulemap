@@ -1,4 +1,4 @@
-module Pods_AroundTheGlobe {
+framework module Pods_AroundTheGlobe {
   umbrella header "Pods-AroundTheGlobe-umbrella.h"
 
   export *

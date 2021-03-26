@@ -2,6 +2,7 @@
 # platform :ios, '9.0'
 
 target 'AroundTheGlobe' do
+use_frameworks!
 pod "Apollo"
 
 end

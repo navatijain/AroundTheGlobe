@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D121064567D4CBFDC6D1B6C /* Pods_AroundTheGlobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8251C0B287D1E56AF35173 /* Pods_AroundTheGlobe.framework */; };
 		93F5EF01260DA3E500E82E11 /* AroundTheGlobeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF00260DA3E500E82E11 /* AroundTheGlobeApp.swift */; };
 		93F5EF03260DA3E500E82E11 /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF02260DA3E500E82E11 /* CountryListView.swift */; };
 		93F5EF05260DA3E600E82E11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F5EF04260DA3E600E82E11 /* Assets.xcassets */; };
@@ -23,10 +24,21 @@
 		93F5EF44260DADF700E82E11 /* CountryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF43260DADF700E82E11 /* CountryDetailViewModel.swift */; };
 		93F5EF48260DAEB100E82E11 /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF47260DAEB100E82E11 /* CountryDetailView.swift */; };
 		93F5EF4E260DB32600E82E11 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF4D260DB32600E82E11 /* ErrorView.swift */; };
-		B41D7450450CC6486702439A /* libPods-AroundTheGlobe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CDDE3028D640EC3F2C9062 /* libPods-AroundTheGlobe.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		93601EEF260E954200538823 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F5EEF5260DA3E500E82E11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93F5EEFC260DA3E500E82E11;
+			remoteInfo = AroundTheGlobe;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		93601EEA260E954200538823 /* AroundTheGlobeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AroundTheGlobeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93601EEE260E954200538823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93F5EEFD260DA3E500E82E11 /* AroundTheGlobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundTheGlobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F5EF00260DA3E500E82E11 /* AroundTheGlobeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundTheGlobeApp.swift; sourceTree = "<group>"; };
 		93F5EF02260DA3E500E82E11 /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
@@ -47,25 +59,41 @@
 		93F5EF4D260DB32600E82E11 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		C1B576E6E86C9B199A281BED /* Pods-AroundTheGlobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundTheGlobe.release.xcconfig"; path = "Target Support Files/Pods-AroundTheGlobe/Pods-AroundTheGlobe.release.xcconfig"; sourceTree = "<group>"; };
 		D8809EC00E8BD7EA9BD0840F /* Pods-AroundTheGlobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundTheGlobe.debug.xcconfig"; path = "Target Support Files/Pods-AroundTheGlobe/Pods-AroundTheGlobe.debug.xcconfig"; sourceTree = "<group>"; };
-		F3CDDE3028D640EC3F2C9062 /* libPods-AroundTheGlobe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AroundTheGlobe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB8251C0B287D1E56AF35173 /* Pods_AroundTheGlobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AroundTheGlobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		93601EE7260E954200538823 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93F5EEFA260DA3E500E82E11 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41D7450450CC6486702439A /* libPods-AroundTheGlobe.a in Frameworks */,
+				2D121064567D4CBFDC6D1B6C /* Pods_AroundTheGlobe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93601EEB260E954200538823 /* AroundTheGlobeTests */ = {
+			isa = PBXGroup;
+			children = (
+				93601EEE260E954200538823 /* Info.plist */,
+			);
+			path = AroundTheGlobeTests;
+			sourceTree = "<group>";
+		};
 		93F5EEF4260DA3E500E82E11 = {
 			isa = PBXGroup;
 			children = (
 				93F5EEFF260DA3E500E82E11 /* AroundTheGlobe */,
+				93601EEB260E954200538823 /* AroundTheGlobeTests */,
 				93F5EEFE260DA3E500E82E11 /* Products */,
 				A4518C7C2A8B760B415C8489 /* Pods */,
 				B891F77DC12AF9C5A6B8A9CA /* Frameworks */,
@@ -76,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				93F5EEFD260DA3E500E82E11 /* AroundTheGlobe.app */,
+				93601EEA260E954200538823 /* AroundTheGlobeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,7 +193,7 @@
 		B891F77DC12AF9C5A6B8A9CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F3CDDE3028D640EC3F2C9062 /* libPods-AroundTheGlobe.a */,
+				DB8251C0B287D1E56AF35173 /* Pods_AroundTheGlobe.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,15 +201,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		93601EE9260E954200538823 /* AroundTheGlobeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93601EF3260E954200538823 /* Build configuration list for PBXNativeTarget "AroundTheGlobeTests" */;
+			buildPhases = (
+				93601EE6260E954200538823 /* Sources */,
+				93601EE7260E954200538823 /* Frameworks */,
+				93601EE8260E954200538823 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93601EF0260E954200538823 /* PBXTargetDependency */,
+			);
+			name = AroundTheGlobeTests;
+			productName = AroundTheGlobeTests;
+			productReference = 93601EEA260E954200538823 /* AroundTheGlobeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		93F5EEFC260DA3E500E82E11 /* AroundTheGlobe */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93F5EF0C260DA3E600E82E11 /* Build configuration list for PBXNativeTarget "AroundTheGlobe" */;
 			buildPhases = (
-				93F5EF1D260DA5A800E82E11 /* Generate Apollo GraphQL API */,
 				901802E29122A7197FB1024B /* [CP] Check Pods Manifest.lock */,
+				93F5EF1D260DA5A800E82E11 /* Generate Apollo GraphQL API */,
 				93F5EEF9260DA3E500E82E11 /* Sources */,
 				93F5EEFA260DA3E500E82E11 /* Frameworks */,
 				93F5EEFB260DA3E500E82E11 /* Resources */,
+				580B4256745DD0343EE6485E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +248,11 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					93601EE9260E954200538823 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+						TestTargetID = 93F5EEFC260DA3E500E82E11;
+					};
 					93F5EEFC260DA3E500E82E11 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -219,11 +272,19 @@
 			projectRoot = "";
 			targets = (
 				93F5EEFC260DA3E500E82E11 /* AroundTheGlobe */,
+				93601EE9260E954200538823 /* AroundTheGlobeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		93601EE8260E954200538823 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93F5EEFB260DA3E500E82E11 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,6 +299,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		580B4256745DD0343EE6485E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AroundTheGlobe/Pods-AroundTheGlobe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AroundTheGlobe/Pods-AroundTheGlobe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AroundTheGlobe/Pods-AroundTheGlobe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		901802E29122A7197FB1024B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +359,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		93601EE6260E954200538823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93F5EEF9260DA3E500E82E11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,7 +387,58 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		93601EF0260E954200538823 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93F5EEFC260DA3E500E82E11 /* AroundTheGlobe */;
+			targetProxy = 93601EEF260E954200538823 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		93601EF1260E954200538823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DM6YKWKWAC;
+				INFOPLIST_FILE = AroundTheGlobeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nav.AroundTheGlobeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AroundTheGlobe.app/AroundTheGlobe";
+			};
+			name = Debug;
+		};
+		93601EF2260E954200538823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DM6YKWKWAC;
+				INFOPLIST_FILE = AroundTheGlobeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nav.AroundTheGlobeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AroundTheGlobe.app/AroundTheGlobe";
+			};
+			name = Release;
+		};
 		93F5EF0A260DA3E600E82E11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -468,6 +604,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		93601EF3260E954200538823 /* Build configuration list for PBXNativeTarget "AroundTheGlobeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93601EF1260E954200538823 /* Debug */,
+				93601EF2260E954200538823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		93F5EEF8260DA3E500E82E11 /* Build configuration list for PBXProject "AroundTheGlobe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
