@@ -112,7 +112,6 @@ public final class CountryDetailQuery: GraphQLQuery {
         capital
         currency
         emoji
-        emojiU
         languages {
           __typename
           name
@@ -175,7 +174,6 @@ public final class CountryDetailQuery: GraphQLQuery {
           GraphQLField("capital", type: .scalar(String.self)),
           GraphQLField("currency", type: .scalar(String.self)),
           GraphQLField("emoji", type: .nonNull(.scalar(String.self))),
-          GraphQLField("emojiU", type: .nonNull(.scalar(String.self))),
           GraphQLField("languages", type: .nonNull(.list(.nonNull(.object(Language.selections))))),
           GraphQLField("states", type: .nonNull(.list(.nonNull(.object(State.selections))))),
         ]
@@ -187,8 +185,8 @@ public final class CountryDetailQuery: GraphQLQuery {
         self.resultMap = unsafeResultMap
       }
 
-      public init(phone: String, capital: String? = nil, currency: String? = nil, emoji: String, emojiU: String, languages: [Language], states: [State]) {
-        self.init(unsafeResultMap: ["__typename": "Country", "phone": phone, "capital": capital, "currency": currency, "emoji": emoji, "emojiU": emojiU, "languages": languages.map { (value: Language) -> ResultMap in value.resultMap }, "states": states.map { (value: State) -> ResultMap in value.resultMap }])
+      public init(phone: String, capital: String? = nil, currency: String? = nil, emoji: String, languages: [Language], states: [State]) {
+        self.init(unsafeResultMap: ["__typename": "Country", "phone": phone, "capital": capital, "currency": currency, "emoji": emoji, "languages": languages.map { (value: Language) -> ResultMap in value.resultMap }, "states": states.map { (value: State) -> ResultMap in value.resultMap }])
       }
 
       public var __typename: String {
@@ -233,15 +231,6 @@ public final class CountryDetailQuery: GraphQLQuery {
         }
         set {
           resultMap.updateValue(newValue, forKey: "emoji")
-        }
-      }
-
-      public var emojiU: String {
-        get {
-          return resultMap["emojiU"]! as! String
-        }
-        set {
-          resultMap.updateValue(newValue, forKey: "emojiU")
         }
       }
 

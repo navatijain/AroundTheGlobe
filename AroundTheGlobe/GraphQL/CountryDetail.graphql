@@ -4,7 +4,6 @@ query CountryDetail($code: ID!) {
     capital
     currency
     emoji
-    emojiU
     languages {
       name
     }
