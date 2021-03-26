@@ -19,6 +19,7 @@
 		93F5EF33260DA97300E82E11 /*  CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF32260DA97300E82E11 /*  CountryService.swift */; };
 		93F5EF39260DAAA100E82E11 /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF38260DAAA100E82E11 /* ApolloClient.swift */; };
 		93F5EF3D260DABA800E82E11 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF3C260DABA800E82E11 /* SearchBar.swift */; };
+		93F5EF40260DAD6000E82E11 /* CountryDetail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 93F5EF3F260DAD6000E82E11 /* CountryDetail.graphql */; };
 		B41D7450450CC6486702439A /* libPods-AroundTheGlobe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CDDE3028D640EC3F2C9062 /* libPods-AroundTheGlobe.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		93F5EF32260DA97300E82E11 /*  CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " CountryService.swift"; sourceTree = "<group>"; };
 		93F5EF38260DAAA100E82E11 /* ApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClient.swift; sourceTree = "<group>"; };
 		93F5EF3C260DABA800E82E11 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		93F5EF3F260DAD6000E82E11 /* CountryDetail.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CountryDetail.graphql; sourceTree = "<group>"; };
 		C1B576E6E86C9B199A281BED /* Pods-AroundTheGlobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundTheGlobe.release.xcconfig"; path = "Target Support Files/Pods-AroundTheGlobe/Pods-AroundTheGlobe.release.xcconfig"; sourceTree = "<group>"; };
 		D8809EC00E8BD7EA9BD0840F /* Pods-AroundTheGlobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundTheGlobe.debug.xcconfig"; path = "Target Support Files/Pods-AroundTheGlobe/Pods-AroundTheGlobe.debug.xcconfig"; sourceTree = "<group>"; };
 		F3CDDE3028D640EC3F2C9062 /* libPods-AroundTheGlobe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AroundTheGlobe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 				93F5EF1A260DA58D00E82E11 /* schema.json */,
 				93F5EF14260DA4DF00E82E11 /* Country.graphql */,
 				93F5EF38260DAAA100E82E11 /* ApolloClient.swift */,
+				93F5EF3F260DAD6000E82E11 /* CountryDetail.graphql */,
 			);
 			path = GraphQL;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93F5EF08260DA3E600E82E11 /* Preview Assets.xcassets in Resources */,
+				93F5EF40260DAD6000E82E11 /* CountryDetail.graphql in Resources */,
 				93F5EF1B260DA58D00E82E11 /* schema.json in Resources */,
 				93F5EF05260DA3E600E82E11 /* Assets.xcassets in Resources */,
 			);
