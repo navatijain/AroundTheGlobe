@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-
 struct CountryListView: View {
     
     // MARK: - Properties
-
+    
     @ObservedObject var viewModel: CountryListViewModel
     @State var searchText: String = ""
     
     private struct Constants {
         static let title = "Country List"
+        static let searchPlaceholder = "Search country"
     }
     
     // MARK: - Views
-
+    
     var body: some View {
         switch viewModel.state {
         case .notLoaded:
@@ -29,7 +29,11 @@ struct CountryListView: View {
         case .loaded(let countries):
             NavigationView {
                 VStack {
-                    List(countries, id: \.self) { country in
+                    SearchBar(text: $searchText, placeHolder: Constants.searchPlaceholder)
+                        .padding(.top, 30)
+                    List(
+                        countries.filter{ searchText.isEmpty ? true : $0.name.contains(searchText) },
+                        id: \.self) { country in
                         Text(country.name)
                     }
                     .listRowBackground(Color.red)
