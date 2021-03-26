@@ -1,0 +1,6 @@
+module Pods_AroundTheGlobe {
+  umbrella header "Pods-AroundTheGlobe-umbrella.h"
+
+  export *
+  module * { export * }
+}
