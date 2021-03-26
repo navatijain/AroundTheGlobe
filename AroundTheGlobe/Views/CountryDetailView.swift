@@ -70,7 +70,7 @@ struct CountryDetailView: View {
                 .scaleEffect(x: 2, y: 2, anchor: .center)
             
         case .error(let error):
-            Text("error")
+            ErrorView(error: error, title: Constants.title, buttonHandler: viewModel.load)
         }
     }
 }

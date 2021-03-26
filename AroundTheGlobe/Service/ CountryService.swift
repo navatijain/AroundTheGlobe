@@ -14,14 +14,27 @@ typealias CountryDetail = CountryDetailQuery.Data.Country
 enum CustomError: Error {
     case invalidResponse
     case server
+    
+    var message: String {
+        switch self {
+        case .invalidResponse:
+            return "Invalid Response or data not available"
+            
+        case .server:
+            return "Error fetching response from Server!"
+
+        default:
+            return "Something went wrong!"
+        }
+    }
 }
 
 class CountryService {
     
-    typealias HandlerType = (Result<[Country], CustomError>) -> ()
+    typealias CountryListHandler = (Result<[Country], CustomError>) -> ()
     typealias DetailsHandler = (Result<CountryDetail, CustomError>) -> ()
     
-    func getCountries(handler: @escaping HandlerType) {
+    func getCountries(handler: @escaping CountryListHandler) {
         let query = AllCountriesQuery()
         Apollo.shared.client.fetch(query: query) { result in
             switch result {
