@@ -12,23 +12,17 @@ typealias Country = AllCountriesQuery.Data.Country
 typealias CountryDetail = CountryDetailQuery.Data.Country
 
 enum CustomError: Error {
-    case invalidResponse
     case server
     case noData
     
     var message: String {
         switch self {
-        case .invalidResponse:
-            return "Invalid Response or data not available"
-            
         case .server:
             return "Error fetching response from Server!"
             
         case .noData:
             return "Sorry no data available to load!"
-
-        default:
-            return "Something went wrong!"
+            
         }
     }
 }

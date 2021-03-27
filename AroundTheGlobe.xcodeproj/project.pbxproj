@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D121064567D4CBFDC6D1B6C /* Pods_AroundTheGlobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8251C0B287D1E56AF35173 /* Pods_AroundTheGlobe.framework */; };
+		93601F0C260E9ECA00538823 /* CountryListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93601F0B260E9ECA00538823 /* CountryListViewModelTests.swift */; };
 		93F5EF01260DA3E500E82E11 /* AroundTheGlobeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF00260DA3E500E82E11 /* AroundTheGlobeApp.swift */; };
 		93F5EF03260DA3E500E82E11 /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5EF02260DA3E500E82E11 /* CountryListView.swift */; };
 		93F5EF05260DA3E600E82E11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F5EF04260DA3E600E82E11 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		93601EEA260E954200538823 /* AroundTheGlobeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AroundTheGlobeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93601EEE260E954200538823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93601F0B260E9ECA00538823 /* CountryListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModelTests.swift; sourceTree = "<group>"; };
 		93F5EEFD260DA3E500E82E11 /* AroundTheGlobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundTheGlobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F5EF00260DA3E500E82E11 /* AroundTheGlobeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundTheGlobeApp.swift; sourceTree = "<group>"; };
 		93F5EF02260DA3E500E82E11 /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				93601EEE260E954200538823 /* Info.plist */,
+				93601F0B260E9ECA00538823 /* CountryListViewModelTests.swift */,
 			);
 			path = AroundTheGlobeTests;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93601F0C260E9ECA00538823 /* CountryListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
