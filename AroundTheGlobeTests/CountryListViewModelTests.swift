@@ -52,7 +52,6 @@ class CountryListViewModelTests: XCTestCase {
             default:
                 break
             }
-            expectation.fulfill()
         }
         
         viewModel.load()
@@ -74,7 +73,6 @@ class CountryListViewModelTests: XCTestCase {
             default:
                 break
             }
-            expectation.fulfill()
         }
         
         viewModel.load()
@@ -96,7 +94,6 @@ class CountryListViewModelTests: XCTestCase {
             default:
                 break
             }
-            expectation.fulfill()
         }
         
         viewModel.load()
