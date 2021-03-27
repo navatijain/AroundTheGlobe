@@ -66,7 +66,7 @@ struct CountryDetailView: View {
 
         case .loading:
             ProgressView()
-                .accentColor(Color.blue)
+                .progressViewStyle(CircularProgressViewStyle(tint: Color.purple))
                 .scaleEffect(x: 2, y: 2, anchor: .center)
             
         case .error(let error):

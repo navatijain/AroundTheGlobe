@@ -43,14 +43,13 @@ struct CountryListView: View {
                             CountryCell(countryModel: country)
                         }
                     }
-                    .listRowBackground(Color.red)
                     .navigationBarTitle(Constants.title, displayMode: .inline)
                 }
             }
             
         case .loading:
             ProgressView()
-                .accentColor(Color.blue)
+                .progressViewStyle(CircularProgressViewStyle(tint: Color.purple))
                 .scaleEffect(x: 2, y: 2, anchor: .center)
             
         case .error(let error):
@@ -66,7 +65,6 @@ struct CountryCell: View {
         Text(countryModel.name)
             .padding()
             .font(.title2)
-            .foregroundColor(.purple)
     }
 }
 
