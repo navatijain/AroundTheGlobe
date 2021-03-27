@@ -26,7 +26,8 @@ class CountryDetailViewModelTests: XCTestCase {
                         languages:
                             [
                                 CountryDetail.Language(name: "Hindi"),
-                                CountryDetail.Language(name: "English")],
+                                CountryDetail.Language(name: "English")
+                            ],
                         states:
                             [
                                 CountryDetail.State(name: "So"),

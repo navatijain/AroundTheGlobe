@@ -69,8 +69,29 @@ struct CountryCell: View {
 }
 
 struct CountryListView_Previews: PreviewProvider {
+    class MockGetCountriesSuccessResponse: CountryService {
+        override func getCountries(handler: @escaping CountryService.CountryListHandler) {
+            handler(
+                .success(
+                    [
+                        Country(name: "Samoa", code: "WS"),
+                        Country(name: "Kosovo", code: "XK"),
+                        Country(name: "Yemen", code: "YE"),
+                        Country(name: "Mayotte", code: "YT"),
+                        Country(name: "South Africa", code: "ZA"),
+                        Country(name: "India", code: "IN")
+                    ]
+                )
+            )
+        }
+    }
+    
     static var previews: some View {
-        CountryListView(viewModel: CountryListViewModel())
+        CountryListView(
+            viewModel: CountryListViewModel(
+                service: MockGetCountriesSuccessResponse()
+            )
+        )
     }
 }
 

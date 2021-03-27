@@ -76,7 +76,42 @@ struct CountryDetailView: View {
 }
 
 struct CountryDetailView_Previews: PreviewProvider {
+    class MockGetDetailsSuccessResponse: CountryService {
+        
+        override func getCountryDetail(
+            for code: String,
+            handler: @escaping CountryService.DetailsHandler
+        ) {
+            handler(
+                .success(
+                    CountryDetail(
+                        phone: "91",
+                        capital: "New Delhi",
+                        currency: "INR",
+                        emoji: "🇮🇳",
+                        languages:
+                            [
+                                CountryDetail.Language(name: "Hindi"),
+                                CountryDetail.Language(name: "English")
+                            ],
+                        states:
+                            [
+                                CountryDetail.State(name: "Maharashtra"),
+                                CountryDetail.State(name: "Rajasthan"),
+                                CountryDetail.State(name: "Gujarat")
+                            ]
+                    )
+                )
+            )
+        }
+    }
+    
     static var previews: some View {
-        CountryDetailView(viewModel: CountryDetailViewModel(code: "IN"))
+        CountryDetailView(
+            viewModel: CountryDetailViewModel(
+                code: "IN",
+                service: MockGetDetailsSuccessResponse()
+            )
+        )
     }
 }
