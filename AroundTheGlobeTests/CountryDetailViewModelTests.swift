@@ -74,7 +74,7 @@ class CountryDetailViewModelTests: XCTestCase {
         }
         
         viewModel.load()
-        wait(for: [expectation], timeout: 5.0, enforceOrder: true)
+        wait(for: [expectation], timeout: 5.0)
     }
     
     func testCountryDetailServiceReturnsServerErrorInResponse() {
@@ -95,7 +95,7 @@ class CountryDetailViewModelTests: XCTestCase {
         
         viewModel.load()
         
-        wait(for: [expectation], timeout: 5.0, enforceOrder: true)
+        wait(for: [expectation], timeout: 5.0)
     }
     
     func testCountryDetailServiceReturnsNoDataInResponse() {
@@ -116,7 +116,7 @@ class CountryDetailViewModelTests: XCTestCase {
         
         viewModel.load()
         
-        wait(for: [expectation], timeout: 5.0, enforceOrder: true)
+        wait(for: [expectation], timeout: 5.0)
     }
 }
 
